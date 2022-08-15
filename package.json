@@ -1,0 +1,31 @@
+{
+  "name": "@yandex-cloud/function-types",
+  "version": "1.0.0",
+  "description": "TypeScript typings for Serverless Functions in Yandex.Cloud",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": "Yandex LLC",
+  "bugs": {
+    "url": "https://github.com/yandex-cloud/function-ts-types/issues"
+  },
+  "keywords": [
+    "yandex-cloud",
+    "cloud",
+    "functions",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yandex-cloud/function-ts-types.git"
+  },
+  "scripts": {
+    "prepare": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
