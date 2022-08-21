@@ -1,5 +1,5 @@
 import { FunctionHandler } from "../src"
-import { Timer } from "../src/triggers/timer"
+import { Timer } from "../src/triggers"
 
 export const handler: FunctionHandler<Timer> = (event) => {
   return {
