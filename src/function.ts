@@ -47,7 +47,7 @@ export interface FunctionEvent {
     isBase64Encoded: boolean;
 }
 
-type FunctionSyncHandler = (event: FunctionEvent, context: FunctionContext) => FunctionResult;
-type FunctionAsyncHandler = (event: FunctionEvent, context: FunctionContext) => Promise<FunctionResult>;
+type FunctionSyncHandler<Event> = (event: Event, context: FunctionContext) => FunctionResult;
+type FunctionAsyncHandler<Event> = (event: Event, context: FunctionContext) => Promise<FunctionResult>;
 
-export type FunctionHandler = FunctionSyncHandler | FunctionAsyncHandler;
+export type FunctionHandler<Event> = FunctionSyncHandler<Event> | FunctionAsyncHandler<Event>;
