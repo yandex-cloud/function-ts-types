@@ -1,5 +1,4 @@
-import { FunctionHandler } from "../src";
-import { ApiGateway } from "../src/api-gateway";
+import { ApiGateway, FunctionHandler } from "../src";
 
 export const handler: FunctionHandler<ApiGateway.Event, ApiGateway.Result> = (
     event

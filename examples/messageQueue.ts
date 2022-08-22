@@ -1,5 +1,4 @@
-import { FunctionHandler } from "../src";
-import { MessageQueue } from "../src/triggers";
+import { FunctionHandler, MessageQueue } from "../src";
 
 export const handler: FunctionHandler<MessageQueue> = (event) => {
     return {

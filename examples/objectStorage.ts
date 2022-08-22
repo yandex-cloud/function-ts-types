@@ -1,5 +1,4 @@
-import { FunctionHandler } from "../src";
-import { ObjectStorage } from "../src/triggers";
+import { FunctionHandler, ObjectStorage } from "../src";
 
 export const handler: FunctionHandler<ObjectStorage> = (event) => {
     return {
