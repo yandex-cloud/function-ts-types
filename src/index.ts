@@ -1,4 +1,7 @@
 import type FunctionContext from "./context";
+export * from "./api-gateway";
+export * from "./http";
+export * from "./triggers";
 
 type FunctionSyncHandler<Event, Result> = (
     event: Event,
