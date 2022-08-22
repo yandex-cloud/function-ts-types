@@ -1,3 +1,4 @@
+import type BudgetExample from "./budget.json";
 import type CloudLoggingExample from "./cloudLogging.json";
 import type ContainerRegistryExample from "./containerRegistry.json";
 import type IotCoreExample from "./iotCore.json";
@@ -11,3 +12,4 @@ export type ObjectStorage = typeof ObjectStorageExample;
 export type ContainerRegistry = typeof ContainerRegistryExample;
 export type CloudLogging = typeof CloudLoggingExample;
 export type IotCore = typeof IotCoreExample;
+export type Budget = typeof BudgetExample;
