@@ -1,6 +1,4 @@
-import type BudgetExample from "./budget.json";
-
-export type Budget = typeof BudgetExample;
+export * from "./budget";
 export * from "./cloudLogging";
 export * from "./containerRegistry";
 export * from "./dataStreams";

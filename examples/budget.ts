@@ -1,8 +1,8 @@
-import { Budget, FunctionHandler } from "../src";
+import { Handler } from "../src";
 
-export const handler: FunctionHandler<Budget> = (event) => {
+export const handler: Handler.Budget = (event) => {
     return {
         statusCode: 200,
-        body: event.messages,
+        body: event.messages[0].budgeted_amount,
     };
 };

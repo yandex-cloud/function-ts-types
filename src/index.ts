@@ -2,6 +2,7 @@ import { ApiGatewayAuthorizer } from "./api-gateway";
 import { FunctionHandler } from "./functionHandler";
 import { Http } from "./http";
 import {
+    Budget,
     CloudLogging,
     ContainerRegistry,
     DataStreams,
@@ -24,4 +25,5 @@ export namespace Handler {
     export type DataStreams = FunctionHandler<DataStreams.Event>;
     export type ContainerRegistry = FunctionHandler<ContainerRegistry.Event>;
     export type CloudLogging = FunctionHandler<CloudLogging.Event>;
+    export type Budget = FunctionHandler<Budget.Event>;
 }
