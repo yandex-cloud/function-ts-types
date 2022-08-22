@@ -6,9 +6,9 @@
 ### Usage
 
 ```typescript
-import { FunctionHandler, Http } from '@yandex-cloud/function-types'
+import { Handler } from '@yandex-cloud/function-types'
 
-export const handler: FunctionHandler<Http.Event, Http.Result> = async (event, context) => {
+export const handler: Handler.Http = async (event, context) => {
     // do something
     
     return {
