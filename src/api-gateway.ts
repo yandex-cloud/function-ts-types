@@ -5,7 +5,7 @@ type PickedFunctionEventProps = Pick<
     "httpMethod" | "headers" | "queryStringParameters" | "requestContext"
 >;
 
-export namespace ApiGateway {
+export namespace ApiGatewayAuthorizer {
     export interface Event extends PickedFunctionEventProps {
         resource: string;
         cookies: Record<string, string>;
