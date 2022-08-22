@@ -1,7 +1,13 @@
 import { ApiGatewayAuthorizer } from "./api-gateway";
 import { FunctionHandler } from "./functionHandler";
 import { Http } from "./http";
-import { IotCore, MessageQueue, ObjectStorage, Timer } from "./triggers";
+import {
+    DataStreams,
+    IotCore,
+    MessageQueue,
+    ObjectStorage,
+    Timer,
+} from "./triggers";
 
 export namespace Handler {
     export type ApiGatewayAuthorizer = FunctionHandler<
@@ -13,4 +19,5 @@ export namespace Handler {
     export type Timer = FunctionHandler<Timer.Event>;
     export type MessageQueue = FunctionHandler<MessageQueue.Event>;
     export type IotCore = FunctionHandler<IotCore.Event>;
+    export type DataStreams = FunctionHandler<DataStreams.Event>;
 }

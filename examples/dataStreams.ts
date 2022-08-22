@@ -1,6 +1,7 @@
-import { DataStreams, FunctionHandler } from "../src";
+import { Handler } from "../src";
 
-export const handler: FunctionHandler<DataStreams> = (event) => {
+export const handler: Handler.DataStreams = (event) => {
+    // TODO check what does "depends on the source" means
     return {
         statusCode: 200,
         body: event.messages,
