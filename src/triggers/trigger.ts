@@ -29,4 +29,12 @@ export namespace Trigger {
         cloud_id: string;
         folder_id: string;
     };
+
+    export type TracingContext = {
+        tracing_context: {
+            parent_span_id: string;
+            span_id: string;
+            trace_id: string;
+        };
+    };
 }

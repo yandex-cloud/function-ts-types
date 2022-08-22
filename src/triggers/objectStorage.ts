@@ -9,12 +9,8 @@ export namespace ObjectStorage {
 
     type Metadata = {
         created_at: string;
-        tracing_context: {
-            trace_id: string;
-            span_id: string;
-            parent_span_id: string;
-        };
-    } & Trigger.Location;
+    } & Trigger.Location &
+        Trigger.TracingContext;
 
     type Details = {
         bucket_id: string;
