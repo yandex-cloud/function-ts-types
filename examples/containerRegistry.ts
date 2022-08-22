@@ -1,6 +1,6 @@
-import { ContainerRegistry, FunctionHandler } from "../src";
+import { Handler } from "../src";
 
-export const handler: FunctionHandler<ContainerRegistry> = (event) => {
+export const handler: Handler.ContainerRegistry = (event) => {
     return {
         statusCode: 200,
         body: event.messages[0].details.image_digest,

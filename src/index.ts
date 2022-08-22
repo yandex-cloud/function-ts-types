@@ -2,6 +2,8 @@ import { ApiGatewayAuthorizer } from "./api-gateway";
 import { FunctionHandler } from "./functionHandler";
 import { Http } from "./http";
 import {
+    CloudLogging,
+    ContainerRegistry,
     DataStreams,
     IotCore,
     MessageQueue,
@@ -20,4 +22,6 @@ export namespace Handler {
     export type MessageQueue = FunctionHandler<MessageQueue.Event>;
     export type IotCore = FunctionHandler<IotCore.Event>;
     export type DataStreams = FunctionHandler<DataStreams.Event>;
+    export type ContainerRegistry = FunctionHandler<ContainerRegistry.Event>;
+    export type CloudLogging = FunctionHandler<CloudLogging.Event>;
 }

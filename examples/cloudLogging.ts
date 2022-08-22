@@ -1,6 +1,6 @@
-import { CloudLogging, FunctionHandler } from "../src";
+import { Handler } from "../src";
 
-export const handler: FunctionHandler<CloudLogging> = (event) => {
+export const handler: Handler.CloudLogging = (event) => {
     return {
         statusCode: 200,
         body: event.messages,
