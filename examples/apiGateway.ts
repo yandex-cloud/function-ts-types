@@ -1,9 +1,6 @@
-import { ApiGatewayAuthorizer, FunctionHandler } from "../src";
+import { Handler } from "../src";
 
-export const handler: FunctionHandler<
-    ApiGatewayAuthorizer.Event,
-    ApiGatewayAuthorizer.Result
-> = (event) => {
+export const handler: Handler.ApiGatewayAuthorizer = (event) => {
     return {
         statusCode: 200,
         body: event.headers,
