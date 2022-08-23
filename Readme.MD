@@ -2,6 +2,8 @@
 
 ### Installation
 `npm install -D @yandex-cloud/function-types`
+or 
+`yarn add -D @yandex-cloud/function-types`
 
 ### Usage
 
