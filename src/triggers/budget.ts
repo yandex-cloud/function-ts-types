@@ -4,11 +4,11 @@ export namespace Budget {
         budget_id: string;
         budget_display_name: string;
         amount: number;
-        currency: "RUB"; // TODO should be enum,
-        period: "2021";
+        currency: "RUB" | string; // TODO should be enum,
+        period: "2021" | string; // TODO also enum maybe?
         budgeted_amount: number;
         threshold_amount: number;
-        threshold_type: "amount"; // TODO might be enum
+        threshold_type: "amount" | string; // TODO might be enum
     };
 
     export type Event = {
