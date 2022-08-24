@@ -6,12 +6,13 @@ type PickedFunctionEventProps = Pick<
 >;
 
 export namespace ApiGatewayAuthorizer {
-    export interface Event extends PickedFunctionEventProps {
+    export type Event = {
         resource: string;
         cookies: Record<string, string>;
-    }
-    export interface Result {
+    } & PickedFunctionEventProps;
+
+    export type Result = {
         isAuthorized: boolean;
         context: Record<string, any>;
-    }
+    };
 }
