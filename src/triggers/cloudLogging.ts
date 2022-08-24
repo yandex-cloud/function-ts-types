@@ -14,11 +14,11 @@ export namespace CloudLogging {
 
     type Message = {
         resource: {
-            type: "serverless.function" | string; // TODO find resource types like
+            type: string; // TODO should be enum, e.g. serverless.function
             id: string;
         };
         timestamp: string;
-        level: "INFO" | string; // TODO add enum
+        level: string; // TODO should be enum, e.g. INFO
         message: string;
         json_payload: Record<string, any>; // TODO is there better typing?
     };

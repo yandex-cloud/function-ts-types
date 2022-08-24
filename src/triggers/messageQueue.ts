@@ -10,7 +10,7 @@ export namespace MessageQueue {
     };
 
     type MessageAttributeValue = {
-        dataType: "StringValue" | string; // TODO possible types
+        dataType: string; // TODO should be enum or union, e.g. StringValue
         stringValue: string;
     };
 
