@@ -5,6 +5,7 @@ export const handler: Handler.ApiGatewayAuthorizer = (event) => {
         statusCode: 200,
         body: event.headers,
         isAuthorized: true,
+        keK: "plek",
         context: event.headers,
     };
 };
