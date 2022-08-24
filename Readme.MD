@@ -1,8 +1,8 @@
 # TypeScript type definitions for Yandex Cloud Functions
 
 ### Installation
-`npm install -D @yandex-cloud/function-types`
-or 
+`npm install -D @yandex-cloud/function-types` \
+or  \
 `yarn add -D @yandex-cloud/function-types`
 
 ### Usage
