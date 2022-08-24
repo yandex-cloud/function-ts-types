@@ -8,7 +8,7 @@ export namespace Budget {
         period: string; // TODO also enum maybe, e.g "2021"?
         budgeted_amount: number;
         threshold_amount: number;
-        threshold_type: string; // TODO shoul be enum, e.g. amount
+        threshold_type: string; // TODO should be enum, e.g. amount
     };
 
     export type Event = {
