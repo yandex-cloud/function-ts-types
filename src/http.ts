@@ -31,7 +31,7 @@ export namespace Http {
             requestId: string;
             requestTime: string;
             requestTimeEpoch: number;
-            authorizer?: unknown; // TODO: describe type
+            authorizer?: Record<string, any>;
             apiGateway?: {
                 operationContext: unknown;
             };
