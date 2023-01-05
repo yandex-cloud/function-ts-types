@@ -10,7 +10,7 @@ export namespace Authorizer {
         resource: string;
         cookies: Record<string, string>;
     } & PickedFunctionEventProps;
-    
+
     export type Result = {
         isAuthorized: boolean;
         context: Record<string, any>;

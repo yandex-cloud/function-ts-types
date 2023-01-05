@@ -1,0 +1,128 @@
+{
+    "resource": "/",
+    "path": "/",
+    "pathParameters": {},
+    "headers": {
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "en,ru;q=0.9",
+        "Cache-Control": "no-cache",
+        "Content-Length": "31",
+        "Content-Type": "application/json",
+        "Cookie": "cooke=cookie",
+        "Host": "api.example.com",
+        "Origin": "https://example.com",
+        "Pragma": "no-cache",
+        "Uber-Trace-Id": "7db7c88b3f98b24c:209f8dfbaf733a09:4be59d68a2ddcf7d:1",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 YaBrowser/22.11.5.715 Yowser/2.5 Safari/537.36",
+        "X-Api-Gateway-Function-Id": "d4eqkqnjbub00jd2a40s",
+        "X-Envoy-External-Address": "192.168.0.1",
+        "X-Envoy-Original-Path": "/",
+        "X-Forwarded-For": "192.168.0.1",
+        "X-Forwarded-Proto": "https",
+        "X-Real-Remote-Address": "192.168.0.1:1234",
+        "X-Request-Id": "807f3cc0-8d62-4424-b9ca-84e0c05e53a7",
+        "X-Serverless-Certificate-Ids": "{\"api.example.com\":\"fpqmu8nr96rkpl46ad2s\"}",
+        "X-Serverless-Gateway-Id": "d5d176q7hu5g5rgrpp3m",
+        "X-Trace-Id": "43e4c1cc-4bb8-4645-a712-395e9a307bdd",
+        "X-Yc-Apigateway-Websocket-Connected-At": "1672875978785",
+        "X-Yc-Apigateway-Websocket-Connection-Id": "d20438soh73hn36u5srtfji21qg7eb04b",
+        "X-Yc-Apigateway-Websocket-Event-Type": "MESSAGE",
+        "X-Yc-Apigateway-Websocket-Message-Id": "6hi603qp8p317bpm1rtopdh5cch2ta"
+    },
+    "multiValueHeaders": {
+        "Accept-Encoding": [
+            "gzip, deflate, br"
+        ],
+        "Accept-Language": [
+            "en,ru;q=0.9"
+        ],
+        "Cache-Control": [
+            "no-cache"
+        ],
+        "Content-Length": [
+            "31"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Cookie": [
+            "cookie=cookie"
+        ],
+        "Host": [
+            "api.example.com"
+        ],
+        "Origin": [
+            "https://example.com"
+        ],
+        "Pragma": [
+            "no-cache"
+        ],
+        "Uber-Trace-Id": [
+            "7db7c88b3f98b24c:209f8dfbaf733a09:4be59d68a2ddcf7d:1"
+        ],
+        "User-Agent": [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 YaBrowser/22.11.5.715 Yowser/2.5 Safari/537.36"
+        ],
+        "X-Api-Gateway-Function-Id": [
+            "d4eqkqnjbub00jd2a40s"
+        ],
+        "X-Envoy-External-Address": [
+            "192.168.0.1"
+        ],
+        "X-Envoy-Original-Path": [
+            "/"
+        ],
+        "X-Forwarded-For": [
+            "192.168.0.1"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "X-Real-Remote-Address": [
+            "192.168.0.1:1234"
+        ],
+        "X-Request-Id": [
+            "807f3cc0-8d62-4424-b9ca-84e0c05e53a7"
+        ],
+        "X-Serverless-Certificate-Ids": [
+            "{\"api.example.com\":\"fpqmu8nr96rkpl46ad2s\"}"
+        ],
+        "X-Serverless-Gateway-Id": [
+            "d5d176q7hu5g5rgrpp3m"
+        ],
+        "X-Trace-Id": [
+            "43e4c1cc-4bb8-4645-a712-395e9a307bdd"
+        ],
+        "X-Yc-Apigateway-Websocket-Connected-At": [
+            "1672875978785"
+        ],
+        "X-Yc-Apigateway-Websocket-Connection-Id": [
+            "d20438soh73hn36u5srtfji21qg7eb04b"
+        ],
+        "X-Yc-Apigateway-Websocket-Event-Type": [
+            "MESSAGE"
+        ],
+        "X-Yc-Apigateway-Websocket-Message-Id": [
+            "6hi603qp8p317bpm1rtopdh5cch2ta"
+        ]
+    },
+    "body": "{\"email\":\"mail@example.com\"}",
+    "isBase64Encoded": false,
+    "requestContext": {
+        "identity": {
+            "sourceIp": "192.168.0.1",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 YaBrowser/22.11.5.715 Yowser/2.5 Safari/537.36"
+        },
+        "httpMethod": "POST",
+        "requestId": "807f3cc0-8d62-4424-b9ca-84e0c05e53a7",
+        "requestTime": "4/Jan/2023:23:47:03 +0000",
+        "requestTimeEpoch": 1672876023,
+        "connectionId": "d20438soh73hn36u5srtfji21qg7eb04b",
+        "connectedAt": 1672875978785,
+        "eventType": "MESSAGE",
+        "messageId": "6hi603qp8p317bpm1rtopdh5cch2ta"
+    },
+    "parameters": {},
+    "multiValueParameters": {},
+    "operationId": "b814748d035c99cd7686c796e9ad82e6aede4365460fcb3eebf9a0223cc2d932"
+}
