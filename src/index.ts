@@ -39,18 +39,12 @@ export namespace Handler {
     export type ApiGatewayAuthorizer = ApiGateway.Authorizer;
 
     export type Http = FunctionHandler<Http.Event, Http.Result>;
-    export type ObjectStorage = FunctionHandler<
-        ObjectStorage.Event,
-        Http.Result
-    >;
-    export type Timer = FunctionHandler<Timer.Event, Http.Result>;
-    export type MessageQueue = FunctionHandler<MessageQueue.Event, Http.Result>;
-    export type IotCore = FunctionHandler<IotCore.Event, Http.Result>;
-    export type DataStreams = FunctionHandler<DataStreams.Event, Http.Result>;
-    export type ContainerRegistry = FunctionHandler<
-        ContainerRegistry.Event,
-        Http.Result
-    >;
-    export type CloudLogging = FunctionHandler<CloudLogging.Event, Http.Result>;
-    export type Budget = FunctionHandler<Budget.Event, Http.Result>;
+    export type ObjectStorage = FunctionHandler<ObjectStorage.Event, any>;
+    export type Timer = FunctionHandler<Timer.Event, any>;
+    export type MessageQueue = FunctionHandler<MessageQueue.Event, any>;
+    export type IotCore = FunctionHandler<IotCore.Event, any>;
+    export type DataStreams = FunctionHandler<DataStreams.Event, any>;
+    export type ContainerRegistry = FunctionHandler<ContainerRegistry.Event, any>;
+    export type CloudLogging = FunctionHandler<CloudLogging.Event, any>;
+    export type Budget = FunctionHandler<Budget.Event, any>;
 }
