@@ -22,15 +22,7 @@ export namespace Http {
         multiValueHeaders: Record<string, string[]>;
         queryStringParameters: Record<string, string>;
         multiValueQueryStringParameters: Record<string, string[]>;
-        requestContext: {
-            identity: {
-                sourceIp: string;
-                userAgent: string;
-            };
-            httpMethod: HttpMethod;
-            requestId: string;
-            requestTime: string;
-            requestTimeEpoch: number;
+        requestContext: RequestContext & {
             authorizer?: unknown; // TODO: describe type
             apiGateway?: {
                 operationContext: unknown;
@@ -39,4 +31,15 @@ export namespace Http {
         body: string;
         isBase64Encoded: boolean;
     }
+
+    export type RequestContext = {
+        identity: {
+            sourceIp: string;
+            userAgent: string;
+        };
+        httpMethod: HttpMethod;
+        requestId: string;
+        requestTime: string;
+        requestTimeEpoch: number;
+    };
 }
