@@ -14,6 +14,14 @@ export namespace WebSocket {
         };
     };
 
+    export type Disconnect = Common<DisconnectHeaders> & {
+        httpMethod: Http.Event["httpMethod"];
+        requestContext: RequestContext<"DISCONNECT"> & {
+            // TODO should we specify HTTP method, i.g. DELETE exactly?
+            disconnectStatusCode: number;
+        };
+    };
+
     type Common<Headers extends Record<string, string>> = {
         resource: string;
         path: string;
@@ -29,6 +37,11 @@ export namespace WebSocket {
 
     type MessageHeaders = {
         "X-Yc-Apigateway-Websocket-Message-Id": string;
+    } & Headers;
+
+    type DisconnectHeaders = {
+        "X-Yc-Apigateway-Websocket-Disconnect-Reason": string;
+        "X-Yc-Apigateway-Websocket-Disconnect-Status-Code": string;
     } & Headers;
 
     type Headers = {

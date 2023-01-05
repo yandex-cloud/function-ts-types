@@ -28,6 +28,10 @@ export namespace Handler {
                 IWebSocket.Message,
                 Http.Result
             >;
+            export type Disconnect = FunctionHandler<
+                IWebSocket.Disconnect,
+                Http.Result
+            >;
         }
     }
 
