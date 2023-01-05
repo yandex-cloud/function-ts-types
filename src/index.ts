@@ -20,6 +20,10 @@ export namespace Handler {
             Authorizer.Result
         >;
         export namespace WebSocket {
+            export type Connect = FunctionHandler<
+                IWebSocket.Connect,
+                Http.Result
+            >;
             export type Message = FunctionHandler<
                 IWebSocket.Message,
                 Http.Result
