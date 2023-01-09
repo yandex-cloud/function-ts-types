@@ -1,5 +1,5 @@
 import { Authorizer } from "./api-gateway/authorizer";
-import { WebSocket as IWebSocket } from "./api-gateway/websocket";
+import * as IWebSocket from "./api-gateway/websocket";
 import { FunctionHandler } from "./functionHandler";
 import { Http } from "./http";
 import {
@@ -21,21 +21,21 @@ export namespace Handler {
         >;
         export namespace WebSocket {
             export type Connect = FunctionHandler<
-                IWebSocket.Connect,
+                IWebSocket.ConnectEvent,
                 Http.Result
             >;
             export type Message = FunctionHandler<
-                IWebSocket.Message,
+                IWebSocket.MessageEvent,
                 Http.Result
             >;
             export type Disconnect = FunctionHandler<
-                IWebSocket.Disconnect,
+                IWebSocket.DisconnectEvent,
                 Http.Result
             >;
         }
     }
 
-    // Backward compatibility
+    // @deprecated use `ApiGateway.Authorizer` instead
     export type ApiGatewayAuthorizer = ApiGateway.Authorizer;
 
     export type Http = FunctionHandler<Http.Event, Http.Result>;
