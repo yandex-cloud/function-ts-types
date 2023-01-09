@@ -1,5 +1,5 @@
-import { Handler } from "../src";
-import { ApiGatewayAuthorizer } from "../src/api-gateway";
+import { Handler } from "./../";
+import { ApiGatewayAuthorizer } from "../api-gateway";
 
 export const handler: Handler.ApiGatewayAuthorizer = (
     event

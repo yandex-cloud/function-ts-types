@@ -1,4 +1,5 @@
-import { ApiGatewayAuthorizer } from "./api-gateway";
+import { Authorizer } from "./api-gateway/authorizer";
+import * as IWebSocket from "./api-gateway/websocket";
 import { FunctionHandler } from "./functionHandler";
 import { Http } from "./http";
 import {
@@ -13,10 +14,30 @@ import {
 } from "./triggers";
 
 export namespace Handler {
-    export type ApiGatewayAuthorizer = FunctionHandler<
-        ApiGatewayAuthorizer.Event,
-        ApiGatewayAuthorizer.Result
-    >;
+    export namespace ApiGateway {
+        export type Authorizer = FunctionHandler<
+            Authorizer.Event,
+            Authorizer.Result
+        >;
+        export namespace WebSocket {
+            export type Connect = FunctionHandler<
+                IWebSocket.ConnectEvent,
+                Http.Result
+            >;
+            export type Message = FunctionHandler<
+                IWebSocket.MessageEvent,
+                Http.Result
+            >;
+            export type Disconnect = FunctionHandler<
+                IWebSocket.DisconnectEvent,
+                Http.Result
+            >;
+        }
+    }
+
+    // @deprecated use `ApiGateway.Authorizer` instead
+    export type ApiGatewayAuthorizer = ApiGateway.Authorizer;
+
     export type Http = FunctionHandler<Http.Event, Http.Result>;
     export type ObjectStorage = FunctionHandler<ObjectStorage.Event, any>;
     export type Timer = FunctionHandler<Timer.Event, any>;
