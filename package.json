@@ -1,6 +1,6 @@
 {
   "name": "@yandex-cloud/function-types",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "TypeScript typings for Serverless Functions in Yandex.Cloud",
   "main": "dist/src/index.js",
   "license": "MIT",
