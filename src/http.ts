@@ -28,8 +28,15 @@ export namespace Http {
                 operationContext: unknown;
             };
         };
+        version: string;
+        resource: string;
+        path: string;
+        pathParameters: Record<string, string>;
         body: string;
         isBase64Encoded: boolean;
+        parameters: Record<string, string>;
+        multiValueParameters: Record<string, string[]>;
+        operationId: string;
     }
 
     export type RequestContext = {
